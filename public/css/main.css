@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: bisque;
+    /*border: dotted grey 1px;*/
+    box-sizing: border-box;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+body{
+    background-image: url('../img/dera-szurdok.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+}
+
+input{
+    color: #000;
+    display: block;
+    margin: 0 auto;
+}
+label{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#submit{
+    margin-top: 20px;
+}
+
+#logout{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.gradient{
+    background-color: rgba(0,0,0,0.7);
+    background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+    background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+    background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+}
+
+#main-content{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-width: 1200px;
+    background-color: rgba(0,0,0,0.6);
+    margin: 0 auto;
+    border: groove 6px rgba(255,255,255,0.5);
+}
+
+#main-header{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+#main-header section{
+    float: left;
+}
+
+#header-left img{
+    max-width: 120px;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: groove 4px rgba(255,255,255,0.5);
+    border-right: groove 4px rgba(255,255,255,0.5);
+}
+
+#details{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#details li{
+    margin-bottom: 5px;
+}
+
+#header-left{
+    width: 35%;
+}
+
+#header-center{
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 30%;
+}
+
+#header-right{
+    text-align: right;
+    width: 35%;
+}
+
+.sub-content{
+    clear: both;
+    padding: 0 10px;
+    margin: 0 0 40px 0;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.sub-content h2{
+    padding: 10px 2px;
+    border-top-left-radius: 10px;
+    border-left: groove 4px rgba(255,255,255,0.5);
+    border-top: groove 4px rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+#btn-container{
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    overflow: hidden;
+}
+
+.cv-btn{
+    float: left;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border: groove 2px rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.7);
+    text-decoration: none;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition:all 0.8s;
+}
+
+.cv-btn:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.cv-btn-left{
+    border-top-left-radius: 20px;
+    border-right: 0 !important;
+}
+
+.cv-btn-right{
+    border-bottom-right-radius: 20px;
+    border-left: groove 2px rgba(255,255,255,0.4) !important;
+}
+
+.cv-header{
+    margin: 20px 0 10px 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.cv-row{
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 5px;
+    border-left: groove 2px rgba(255,255,255,0.5);
+    border-bottom: groove 2px rgba(255,255,255,0.5);
+    padding: 10px 2px;
+}
+
+.cv-left, .cv-right{
+    float: left;
+}
+
+.cv-left{
+    text-align: right;
+    width: 30%;
+    padding-right: 10px;
+}
+
+#cv-letter{
+    padding: 10px 8px;
+    line-height: 1.2em;
+    font-size: 20px;
+    text-indent: 20px;
+}
+
+#cv-letter p{
+    margin: 10px 0;
+}
+
+.cv-right{
+    text-align: left;
+    width: 70%;
+    padding-left: 10px;
+}
+
+#main-footer{
+    border-top: 1px grey dotted;
+    text-align: center;
+}
+
+#main-footer p{
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px;
+}
+
+#error{
+    text-align: center;
+    padding: 20px;
+    border-left: groove 4px rgba(255,255,255,0.5);
+    border-bottom: groove 4px rgba(255,255,255,0.5);
+    background-color: rgba(255,0,0,0.2);
+}
+
+#error-btn{
+    display: inline-block;
+    width: 150px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 10px;
+    border: groove 2px rgba(255,255,255,0.5);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition:all 0.8s;
+}
+
+#error-btn:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+@media screen and (max-width: 768px){
+    
+    #header-left, 
+    #header-right, 
+    #header-center{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #header-left img{
+        border-bottom: groove 4px rgba(255,255,255,0.5);
+        border-right: groove 4px rgba(255,255,255,0.5);
+        border-left: groove 4px rgba(255,255,255,0.5);
+    }
+    
+    #header-center h1{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .cv-left, 
+    .cv-right{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .cv-left{
+        font-weight: bold;
+    }
+    
+    #cv-letter{
+        text-align: center;
+    }
+    
+    #btn-container{
+        width: 100%;
+    }
+    
+    .cv-btn{
+        margin: 0 auto;
+    }
+    
+    .cv-btn-left{
+        border-bottom: 0px !important;
+        border-right: groove 2px rgba(255,255,255,0.5) !important;
+        float: left;
+    }
+    
+    .cv-btn-left{
+        float: right;
+    }
+    
+}
+
+@media print{
+    *{
+        color: black;
+        font-size: 16px;
+    }
+    
+    #main-header{
+        margin-bottom: 0;
+    }
+    
+    .cv-row{
+        padding: 4px;
+    }
+    
+    .sub-content:last-child{
+        page-break-before: always;
+    }
+    
+    #main-footer{
+        display: none;
+    }
+}

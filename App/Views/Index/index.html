@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block body %}
+<a href="/user/logout" id="logout">Kilépés</a>
+<section class="sub-content">
+            <h2 class="gradient">Index</h2>
+            <header class="cv-header">
+                <p class="cv-left"><h3>Bevezető</h3></p>
+            </header>
+            <section class="cv-row" id="cv-letter">
+            {{ intro|raw }}
+            </section>
+            <section id="btn-container">
+                <a class="cv-btn cv-btn-left" href="/cv">Önéletrajz</a>
+                <a class="cv-btn cv-btn-right" href="/cv.rar">Forráskód</a>
+            </section>
+        </section>
+{% endblock %}

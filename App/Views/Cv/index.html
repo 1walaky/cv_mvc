@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Bodó Barna - Önéletrajz{% endblock %}
+
+{% block body %}
+<a href="/user/logout" id="logout">Kilépés</a>
+<section class="sub-content">
+          <h2 class="gradient">Önéletrajz</h2>
+   <header class="cv-header">
+    <p class="cv-left">
+      
+          </header>
+          {% for key,value in data %}
+          <h3>{{ key }}</h3></p>
+            {% for data in value %}
+              <section class="cv-row">
+                <p class="cv-left">{{ data.title }}<br>{{ data.year }}</p>
+                <p class="cv-right">{{ data.details }}</p>
+              </section>
+            {% endfor %}  
+          {% endfor %}
+     
+          </section>
+          <section class="sub-content">
+
+          <h2 class="gradient">Motivációs levél</h2>
+          <header class="cv-header">
+            <p class="cv-left">
+              <h3>Tisztelt Hölgyem / Uram!</h3>
+            </p>
+  </header>
+  <section class="cv-row" id="cv-letter">
+    {{ letter|raw }}
+  </section>
+</section>
+{% endblock %}

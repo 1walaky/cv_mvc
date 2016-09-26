@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <title>'.$this->title.'</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <article id="main-content">
+        <header id="main-header" class="gradient">
+            <section id="header-left">
+                <a href="/"><img src="/img/profile.jpg"></a>
+            </section>
+            <section id="header-center">
+                <h1>Bodó Barna</h1>
+            </section>
+            <section id="header-right">
+                <ul id="details">
+                    <li>2013 Pomáz Ybl Miklós utca 1.</li>
+                    <li>+36204600620</li>
+                    <li>bodo.barna.1984@gmail.com</li>
+                    <li>1984.12.02.</li>
+                </ul>
+            </section>
+  </header>
+  {% block body %}
+  {% endblock %}
+  <footer id="main-footer">
+    <p>A háttér fotó saját alkotás.</p>
+  </footer>
+  </article>
+  <script src="/js/main.js"></script>
+</body>
+</html>
